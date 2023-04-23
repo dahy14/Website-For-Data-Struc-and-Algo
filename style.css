@@ -116,18 +116,18 @@ body {
 
 .sub-highlights:nth-child(3n-1) {
 }
-
 .sub-highlights:nth-last-child(3) {
   border-radius: 0 0 0 20px;
 }
-
 .sub-highlights:nth-child(3n) {
 }
 .sub-highlights:nth-child(3n + 1) {
 }
-
 .sub-highlights:nth-last-child(1) {
   border-radius: 0 0 20px 0;
+}
+.sub-highlights a {
+  font-size: 0.8rem;
 }
 
 .main {
