@@ -15,15 +15,20 @@ cont.onscroll = function () {
     layers3[0].style.left = (r * w) / 2.4 + "px";
   }
 
-  if (w > 1500) {
-    for (let i = 1; i < layers.length; i++) {
-      applyParallax(r, i, w);
-    }
-  } else {
-    for (let i = 1; i < layers.length; i++) {
-      r -= 0.5;
-      applyParallax(r, i, w);
-    }
+  for (let i = 1; i < layers.length; i++) {
+    applyParallax(r, i, w);
+
+    // uncomment the block of code when you are using (1) laptop AND (2) when using a live server (by ritwick dey). THEN comment the For loop above.
+
+    // if (w > 1500) {
+    //   for (let i = 1; i < layers.length; i++) {
+    //     applyParallax(r, i, w);
+    //   }
+    // } else {
+    //   for (let i = 1; i < layers.length; i++) {
+    //     r -= 0.5;
+    //     applyParallax(r, i, w);
+    //   }
   }
 };
 
